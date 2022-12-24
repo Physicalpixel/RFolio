@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+.topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	color: #212121;
+	background-color: none;
+	box-shadow: 1px 0px 10px rgba(222, 222, 222, 0.5);
+}
+.menu-icon {
+	font-size: 22px;
+	position: fixed;
+	left: 16px;
+	cursor: pointer;
+}
+.menu-icon:hover {
+	font-size: 26px;
+}
+.portfolio {
+	font-family: "Poppins";
+	font-size: 15pt;
+	position: fixed;
+	left: 55px;
+}
+.home-icon {
+	position: fixed;
+	background-color: #212121;
+	padding: 8px 8px;
+	color: #f6f6f6;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	font-size: 24px;
+	position: absolute;
+	display: flex;
+	right: 33px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.home-icon:hover {
+	padding: 6px 6px;
+	font-size: 28px;
+}
+.search-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	right: 71px;
+	position: fixed;
+}
+
+.search-input {
+	background-color: #eeeeee;
+	width: 100%;
+	height: 40px;
+	padding: 0px 10px;
+	font-size: 16px;
+	border: none;
+}
+.search-icon {
+	background-color: #212121;
+	padding: 8px 8px;
+	color: #f6f6f6;
+	font-size: 25px;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+input:focus {
+	color: #212121;
+}
+input {
+	border: white;
+	outline: white;
+}
+input::placeholder {
+	font-size: 14px;
+	color: #737373;
+}
