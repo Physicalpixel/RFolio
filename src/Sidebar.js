@@ -1,10 +1,26 @@
 import React from "react"
 import "./sidebar.css"
 import { MdLabel } from "react-icons/md"
+import { useEffect, useRef } from "react"
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, sidebarValueUpdate }) {
+	const elementRef = useRef()
+	useEffect(() => {
+		console.log("ran this")
+		if (isOpen) {
+			elementRef.current = document.querySelector(".sidebar")
+			elementRef.current.addEventListener("click", sidebarValueUpdate)
+		}
+
+		return () => {
+			if (elementRef.current) {
+				elementRef.current.removeEventListener("click", sidebarValueUpdate)
+			}
+		}
+	}, [isOpen, sidebarValueUpdate])
+
 	return (
-		<div className="sidebar">
+		<div className={`sidebar ${isOpen ? "open" : "closed"}`}>
 			<div className="Projects">
 				{" "}
 				<MdLabel className="icons" />
@@ -19,7 +35,7 @@ export default function Sidebar() {
 			</div>
 			<div className="New-Media">
 				{" "}
-				<MdLabel className="icons" /> New Media
+				<MdLabel className="icons" /> New-Media
 			</div>
 			<div className="Design">
 				{" "}

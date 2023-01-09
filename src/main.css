@@ -1,18 +1,24 @@
 .main-content-container {
+	background-color: none;
 	border-radius: 8px;
-	padding: 10px;
 	box-sizing: border-box;
 	position: fixed;
 	border-top-right-radius: 8px;
-
 	top: 60px;
 	height: calc(100vh - 8%);
-
-	margin-left: 1px;
+	text-decoration: none;
+}
+.main-content-container.open {
+	width: calc(100vw - 200px);
 	transition: 0.3s;
-	width: calc(100vw - 20px);
+	margin-left: 184px;
 }
 
+.main-content-container.collapsed {
+	margin-left: 20px;
+	transition: 0.3s;
+	width: calc(100vw - 40px);
+}
 .main-content {
 	border-radius: 8px;
 	height: 80%;
@@ -23,11 +29,7 @@
 	grid-gap: 15px;
 	overflow: auto;
 }
-.main-content-container.collapsed {
-	margin-left: 184px;
-	transition: 0.3s;
-	width: calc(100vw - 200px);
-}
+
 .main-content > *:nth-child(n) {
 	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
 	text-decoration: none;

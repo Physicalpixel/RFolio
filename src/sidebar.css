@@ -1,15 +1,21 @@
 .sidebar {
 	position: fixed;
 	top: 60px;
+	left: 0;
 	bottom: 0;
 	width: 200px;
-	background-color: none;
-	transition: left 0.3s ease-in-out;
-	color: #212121;
-	height: calc(100vh - 8%);
-	justify-content: center;
-	align-items: center;
+	transition: transform 0.5s ease-in-out;
+	transform: translateX(-100%);
 }
+.sidebar a:hover {
+	color: red;
+}
+
+.sidebar.open {
+	width: 200px;
+	transform: translateX(0);
+}
+
 .sidebar div {
 	margin: 0;
 	top: 30px;
@@ -24,12 +30,7 @@
 	text-decoration: none;
 	transition: 0.3s;
 }
-.sidebar div:hover {
-	font-style: bold;
-	color: #212121;
-	font-size: 18px;
-	transition: 0.2s;
-}
+
 .icons {
 	padding-left: 7px;
 	padding-right: 12px;
