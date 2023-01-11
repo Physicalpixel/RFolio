@@ -16,10 +16,11 @@ export default function App() {
 		console.log(event.target.innerText)
 		setSidebarValue(event.target.innerText)
 	}
+	const rightPx = "33px"
 
 	return (
 		<div className="App">
-			<Topbar toggleSidebar={toggleSidebar}></Topbar>
+			<Topbar rightPos={rightPx} display="flex" text="Portfolio | Data Visualization | Front-End" toggleSidebar={toggleSidebar}></Topbar>
 			<Sidebar isOpen={SidebarState} sidebarValueUpdate={sidebarValueUpdate} />
 			<Main targetValue={sidebarValue} isOpen={SidebarState} />
 		</div>

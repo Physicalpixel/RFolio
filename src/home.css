@@ -1,0 +1,28 @@
+.folio {
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	margin-left: 20px;
+	position: absolute;
+	color: #f6f6f6;
+	background-color: #212121;
+	text-decoration: none;
+	top: calc(100vh - 200px);
+	padding: 15px;
+	font-family: "Open Sans", sans-serif;
+}
+.datagen {
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	margin-left: 135px;
+	position: absolute;
+	color: #f6f6f6;
+	background-color: #212121;
+	text-decoration: none;
+	top: calc(100vh - 200px);
+	padding: 15px;
+	font-family: "Open Sans", sans-serif;
+}
+.datagen:hover {
+	font-size: 18px;
+	padding: 10px;
+}
