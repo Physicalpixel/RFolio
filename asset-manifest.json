@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RFolio/static/css/main.7f51cff7.css",
-    "main.js": "/RFolio/static/js/main.a2b8c324.js",
+    "main.css": "/RFolio/static/css/main.dea86905.css",
+    "main.js": "/RFolio/static/js/main.11650e22.js",
     "index.html": "/RFolio/index.html",
-    "main.7f51cff7.css.map": "/RFolio/static/css/main.7f51cff7.css.map",
-    "main.a2b8c324.js.map": "/RFolio/static/js/main.a2b8c324.js.map"
+    "main.dea86905.css.map": "/RFolio/static/css/main.dea86905.css.map",
+    "main.11650e22.js.map": "/RFolio/static/js/main.11650e22.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f51cff7.css",
-    "static/js/main.a2b8c324.js"
+    "static/css/main.dea86905.css",
+    "static/js/main.11650e22.js"
   ]
 }
