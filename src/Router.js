@@ -6,7 +6,7 @@ import Datagen from "./Datagen"
 
 export default function Router() {
 	return (
-		<BrowserRouter basename="/RFolio">
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 				<Route path="/" element={<Home />}></Route>
 				<Route path="/App" element={<App />}></Route>
