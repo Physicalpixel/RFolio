@@ -6,9 +6,9 @@ import Datagen from "./Datagen"
 
 export default function Router() {
 	return (
-		<BrowserRouter basename={process.env.PUBLIC_URL}>
+		<BrowserRouter basename="./Rfolio">
 			<Routes>
-				<Route path="/RFolio" element={<Home />}></Route>
+				<Route path="/" element={<Home />}></Route>
 				<Route path="/App" element={<App />}></Route>
 				<Route path="/Datagen" element={<Datagen />}></Route>
 			</Routes>
