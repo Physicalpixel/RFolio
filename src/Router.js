@@ -8,7 +8,7 @@ export default function Router() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
-				<Route path="/" element={<Home />}></Route>
+				<Route path="/RFolio" element={<Home />}></Route>
 				<Route path="/App" element={<App />}></Route>
 				<Route path="/Datagen" element={<Datagen />}></Route>
 			</Routes>
