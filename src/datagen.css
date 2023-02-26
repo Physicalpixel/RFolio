@@ -1,0 +1,6 @@
+.form {
+	position: fixed;
+	display: flex;
+	top: 100px;
+	left: 60px;
+}

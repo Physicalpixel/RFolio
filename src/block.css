@@ -1,0 +1,14 @@
+.overlay {
+	height: 100%;
+	background: black;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	justify-content: center;
+	opacity: 0.89;
+	font-size: "18px";
+	color: white;
+	padding: 0;
+	margin: 0;
+	display: none;
+}

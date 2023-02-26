@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { AiFillHome } from "react-icons/ai"
 import { HiSearch, HiMenu } from "react-icons/hi"
 
-export default function Topbar({ toggleSidebar, text, display, rightPos }) {
+const Topbar = React.memo(({ selectedOption, toggleSidebar, text, display, rightPos }) => {
 	return (
 		<div className="topbar">
 			<HiMenu style={{ display: display }} className="menu-icon" onClick={toggleSidebar} />
@@ -18,4 +18,6 @@ export default function Topbar({ toggleSidebar, text, display, rightPos }) {
 			</Link>
 		</div>
 	)
-}
+})
+
+export default Topbar

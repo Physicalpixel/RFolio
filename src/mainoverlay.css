@@ -20,6 +20,7 @@
 	width: calc(100vw - 40px);
 }
 .main-content {
+	border-radius: 8px;
 	height: 80%;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -31,6 +32,9 @@
 .main-content > *:nth-child(n) {
 	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
 	cursor: pointer;
+}
+.main-content > *:nth-child(n):hover {
+	opacity: 0.2;
 }
 
 .footer {

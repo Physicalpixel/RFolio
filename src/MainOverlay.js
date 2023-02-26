@@ -6,7 +6,8 @@ import { useEffect, useState } from "react"
 
 export default function Main({ targetValue, isOpen }) {
 	const [data, setData] = useState(null)
-
+	const [isHovered, setIsHovered] = useState(false)
+	console.log(isHovered)
 	useEffect(() => {
 		async function fetchData() {
 			const response = await fetch("https://raw.githubusercontent.com/Physicalpixel/Portfolio/master/data.json")
@@ -21,10 +22,11 @@ export default function Main({ targetValue, isOpen }) {
 		const result = data.filter((item) => item.tech.includes(targetValue) === true)
 		return (
 			<div className={`main-content-container ${isOpen ? "open" : "collapsed"}`}>
-				<div className="main-content">
+				<div onMouseOver={() => setIsHovered(true)} onMouseOut={() => setIsHovered(false)} className="main-content">
 					{result.map((item) => {
 						if (item.tech.includes("Projects") === true) {
-							return <Block key={item.id} bgurl={item.bgurl} url={item.url} title={item.title} tags={item.tags}></Block>
+							console.log(item)
+							return <Block key={item.id} bgurl={item.bgurl} url={item.url} title={item.title}></Block>
 						}
 					})}
 				</div>
